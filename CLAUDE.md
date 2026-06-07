@@ -4,6 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 > **Read [AGENTS.md](AGENTS.md) first.** It contains the authoritative rules for code quality, commands, git, dependencies, testing, changelogs, and releasing. This file covers architecture; AGENTS.md covers process. When they overlap, AGENTS.md wins.
 
+> **This is a fork of `earendil-works/pi`.** Before changing Pi's source, read [FORK.md](FORK.md): adapt via the extension API (no core changes) wherever possible, keep customizations in their own repos, and reserve the `work` branch for changes the extension API genuinely can't express. Keeping `git diff upstream/main...work` small is the goal.
+
 ## What this is
 
 `pi` is a self-extensible terminal coding agent. This is an npm monorepo of four lockstep-versioned packages that build on each other:
